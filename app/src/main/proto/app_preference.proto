@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.home.androidprotodatastoredemo.proto";
+option java_multiple_files = true;
+
+message LoginPreferences {
+
+  IsLogged isLogged = 1;
+
+  enum IsLogged {
+    NOT_LOGGED_IN = 0;
+    ALREADY_LOGGED_IN = 1;
+  }
+}
